@@ -136,6 +136,7 @@ def draw_boxes(detections, image, colors):
         cv2.putText(image, "{} [{:.2f}]".format(label, float(confidence)),
                     (left, top - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
                     colors[label], 2)
+        cv2.line(image, (0, 0), (250, 250), (0, 255, 0), 2) 
     return image
 
 
